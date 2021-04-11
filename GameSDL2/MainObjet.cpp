@@ -174,7 +174,19 @@ void MainObject::HandelInputAction(SDL_Event events,SDL_Renderer* screen)
 			BulletObject* p_bullet = new BulletObject();
 			p_bullet->LoadImg("img//player_bullet.png",screen);
 
-			p_bullet->SetRect(this->rect_.x + width_frame_ -20,rect_.y + height_frame_*0.3);
+			if(status_ == WALK_LEFT)
+			{
+				p_bullet-> set_bullet_dir(BulletObject::DIR_LEFT);
+				p_bullet->SetRect(this->rect_.x,rect_.y + height_frame_*0.3);
+			}
+			else
+			{
+				p_bullet->set_bullet_dir(BulletObject::DIR_RIGHT);
+				p_bullet->SetRect(this->rect_.x + width_frame_ -20,rect_.y + height_frame_*0.25);
+			}
+
+
+			
 			p_bullet->set_x_val(20);
 			p_bullet->set_is_move(true);
 
@@ -334,32 +346,33 @@ void MainObject::CheckToMap(Map& map_data)
 
 			}
 		}
+	}
 		// check theo chieu doc 
 
-		int width_min = width_frame_ < TILE_SIZE ? width_frame_ : TILE_SIZE;
-		x1=(x_pos_)/TILE_SIZE;
-		x2=(x_pos_ + width_min)/TILE_SIZE;
+	int width_min = width_frame_ < TILE_SIZE ? width_frame_ : TILE_SIZE;
+	x1=(x_pos_)/TILE_SIZE;
+	x2=(x_pos_ + width_min)/TILE_SIZE;
 
-		y1=(y_pos_ + y_val_)/TILE_SIZE;
-		y2=(y_pos_ + y_val_ + height_frame_ -1 )/TILE_SIZE;
+	y1=(y_pos_ + y_val_)/TILE_SIZE;
+	y2=(y_pos_ + y_val_ + height_frame_ -1 )/TILE_SIZE;
 
-		if(x1>= 0 && x2< MAX_MAP_X && y1>= 0 && y2< MAX_MAP_Y)
+	if(x1>= 0 && x2< MAX_MAP_X && y1>= 0 && y2< MAX_MAP_Y)
+	{
+		if(y_val_ >0)
 		{
-			if(y_val_ >0)
+			if(map_data.tile[y2][x1] != BLANK_TILE || map_data.tile[y2][x2] != BLANK_TILE)
 			{
-				if(map_data.tile[y2][x1] != BLANK_TILE || map_data.tile[y2][x2] != BLANK_TILE)
-				{
-					y_pos_ = y2*TILE_SIZE;
-					y_pos_ -= (height_frame_ +1);
-					y_val_ = 0;
+				y_pos_ = y2*TILE_SIZE;
+				y_pos_ -= (height_frame_ +1);
+				y_val_ = 0;
 
-					on_ground_ = true ;
-					if(status_ == WALK_NONE)
-					{
-						status_ = WALK_RIGHT;
-					}
+				on_ground_ = true ;
+				if(status_ == WALK_NONE)
+				{
+					status_ = WALK_RIGHT;
 				}
 			}
+		}
 		else if(y_val_ < 0)
 		{
 			if(map_data.tile[y1][x1] != BLANK_TILE || map_data.tile[y1][x2] != BLANK_TILE)
@@ -369,6 +382,7 @@ void MainObject::CheckToMap(Map& map_data)
 			}
 		}
 	}
+
 	x_pos_ += x_val_;
 	y_pos_ += y_val_;
 	if(x_pos_ <0)
@@ -384,7 +398,6 @@ void MainObject::CheckToMap(Map& map_data)
 	{
 		come_back_time_ = 60;
 	}
-}
 }
 
 void MainObject::UpdateImagePlayer(SDL_Renderer* des)
