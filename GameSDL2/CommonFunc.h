@@ -4,16 +4,17 @@
 
 #include<Windows.h>
 #include<string>
+#include<vector>
 #include<SDL.h>
 #include<SDL_image.h>
 #include<SDL_mixer.h> // am thanh
 #include<SDL_ttf.h>  //font chu
 
 
-
 static SDL_Window* g_window = NULL;
 static SDL_Renderer* g_screen = NULL;   
 static SDL_Event g_event;   // nhan su kien tu ban phim,chuot
+static SDL_Renderer* g_img_menu=NULL;
 
 //Screen-Danh cho man hinh
 const int FRAME_PER_SECOND = 25; // fps so frame trong 1s 
@@ -58,6 +59,13 @@ typedef struct Map
 	char* file_name_;   // luu ten file
 };
 
+
+
+namespace SDLCommonFunc
+{
+	bool CheckCollision(const SDL_Rect& object1 , const SDL_Rect& object2);
+
+}
 #endif
 
 

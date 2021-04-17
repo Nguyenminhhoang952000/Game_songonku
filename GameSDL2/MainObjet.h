@@ -36,6 +36,7 @@ public:
 	void SetMapXY(const int map_x, const int map_y){map_x_= map_x;map_y_=map_y;};
 	void CenterEntityOnMap(Map& map_data);
 	void UpdateImagePlayer(SDL_Renderer* des);
+	SDL_Rect GetRectFrame();
 
 	void set_bullet_list(std::vector<BulletObject*> bullet_list)
 	{
@@ -43,6 +44,8 @@ public:
 	}
 	std::vector<BulletObject*> get_bullet_list() const { return p_bullet_list_;}
 	void HandleBullet(SDL_Renderer* des);
+	void RemoveBullet(const int& idx);
+	void set_comback_time(const int& cb_time){come_back_time_ = cb_time;}
 
 private:
 
