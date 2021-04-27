@@ -23,7 +23,7 @@ bool InitData()  // khoi dong thong so cho moi truong cua SDL
 
 	SDL_SetHint(SDL_HINT_RENDER_SCALE_QUALITY,"1");  // thiet lap che do ty len chat luong
 	//tao cua so window cho game
-	g_window = SDL_CreateWindow("Game songonku : Hoang",
+	g_window = SDL_CreateWindow("Game songonku : Nguyen Minh Hoang",
 								SDL_WINDOWPOS_UNDEFINED,
 								SDL_WINDOWPOS_UNDEFINED,
 								SCREEN_WIDTH,SCREEN_HEIGHT,
@@ -40,9 +40,9 @@ bool InitData()  // khoi dong thong so cho moi truong cua SDL
 				success = false;
 		else
 		{
-			SDL_SetRenderDrawColor(g_screen,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR);
-			int imgFlags = IMG_INIT_PNG;
-			if(!(IMG_Init(imgFlags) && imgFlags))
+			SDL_SetRenderDrawColor(g_screen,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR);  //truyen mau sac cho viec render do ra man hinh
+			int imgFlags = IMG_INIT_PNG;   
+			if(!(IMG_Init(imgFlags) && imgFlags))  // kiem tra  IMG_Init 
 				success = false;
 		}
 		if(TTF_Init() == -1)
@@ -70,7 +70,7 @@ bool LoadBackground()
 void close()  // giai phong cac doi tuong
 {
 	g_background.Free();
-	SDL_DestroyRenderer(g_screen);
+	SDL_DestroyRenderer(g_screen); // giai phong g_screen
 	g_screen = NULL;
 	SDL_DestroyWindow(g_window);
 	g_window = NULL;
@@ -104,11 +104,12 @@ std::vector<ThreatsObject*> MakeThreadList()
 
 int main(int argc, char* argv[])
 {
-	ImpTimer fps_timer;
+	ImpTimer fps_timer; 
+
 	if(InitData() == false)
 		return -1;
 	if(LoadBackground() == false)
-		return -1;
+		return -1; 
 
 
 	GameMap game_map;
@@ -135,7 +136,7 @@ int main(int argc, char* argv[])
 	UINT mark_value = 0;
 
 		
-
+	
 	bool is_quit = false;
 	while(!is_quit)
 	{
@@ -143,7 +144,7 @@ int main(int argc, char* argv[])
 
 		while(SDL_PollEvent(&g_event)!=0)
 		{
-			if(g_event.type == SDL_QUIT)
+			if(g_event.type == SDL_QUIT) 
 			{
 				is_quit = true;
 			}
@@ -153,20 +154,22 @@ int main(int argc, char* argv[])
 		SDL_SetRenderDrawColor(g_screen,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR,RENDER_DRAW_COLOR); 
 		SDL_RenderClear(g_screen); // xoa man hinh
 
-		g_background.Render(g_screen,NULL);
+		g_background.Render(g_screen,NULL); // load anh len 
 
 
 		game_map.DrawMap(g_screen); 
-		Map map_data = game_map.getMap();
+		Map map_data = game_map.getMap(); //Lay Map trong game_map_
+
+
 
 		p_player.HandleBullet(g_screen);
-		p_player.SetMapXY(map_data.start_x_,map_data.start_y_);
+		p_player.SetMapXY(map_data.start_x_,map_data.start_y_); 
 		p_player.DoPlayer(map_data);
 		p_player.Show(g_screen);
 
 
-		game_map.SetMap(map_data);
-		game_map.DrawMap(g_screen);
+		game_map.SetMap(map_data);  //Ban do cap nhap vi tri moi cho start_x_ va start_y_
+		game_map.DrawMap(g_screen); //Ve lai
 
 		for(int i=0;i<threats_list.size();i++)
 		{
@@ -261,9 +264,9 @@ int main(int argc, char* argv[])
 			}
 		}
 		//Hien thi thoi gian tro choi
-		std::string str_time = "Time: ";
+		std::string str_time = "Time : ";
 		Uint32 time_val = SDL_GetTicks()/1000;
-		Uint32 val_time = 300 - time_val;
+		Uint32 val_time = 200 - time_val;
 		if(val_time <=0)
 		{
 			if(MessageBox(NULL,L"GAME OVER",L"Info", MB_OK | MB_ICONSTOP) == IDOK)

@@ -11,14 +11,13 @@
 #include<SDL_ttf.h>  //font chu
 
 
-static SDL_Window* g_window = NULL;
+static SDL_Window* g_window = NULL;   // xay dung fom window cho game
 static SDL_Renderer* g_screen = NULL;   
 static SDL_Event g_event;   // nhan su kien tu ban phim,chuot
 static SDL_Renderer* g_img_menu=NULL;
 
 //Screen-Danh cho man hinh
-const int FRAME_PER_SECOND = 25; // fps so frame trong 1s 
-
+const int FRAME_PER_SECOND = 30; // fps so frame trong 1s 
 const int SCREEN_WIDTH = 1400;  //chieu rong cua man hinh
 const int SCREEN_HEIGHT = 640;  //chieu cao
 const int SCREEN_BPP = 32;		

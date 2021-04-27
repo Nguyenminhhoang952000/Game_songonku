@@ -27,14 +27,16 @@ public:
 
 	};
 	bool LoadImg(std::string path,SDL_Renderer* screen);
-	void Show(SDL_Renderer* des);
-	void HandelInputAction(SDL_Event events, SDL_Renderer* screen);
-	void set_clips();
+	void Show(SDL_Renderer* des);             
+	void HandelInputAction(SDL_Event events, SDL_Renderer* screen); //Xu ly su kien(trai,phai)
+	void set_clips();    // Tao hieu ung
 
-	void DoPlayer(Map& map_data);
-	void CheckToMap(Map& map_data);
-	void SetMapXY(const int map_x, const int map_y){map_x_= map_x;map_y_=map_y;};
-	void CenterEntityOnMap(Map& map_data);
+	void DoPlayer(Map& map_data);    //Cong tru 1 luong cho nhan vat di chuyen
+	void CheckToMap(Map& map_data);  //Kiem tra va cham giua frame voi Map
+
+
+	void SetMapXY(const int map_x, const int map_y){map_x_= map_x;map_y_=map_y;}; 
+	void CenterEntityOnMap(Map& map_data);  //Tinh toan ra thong so cua Map khi di chuyen NV
 	void UpdateImagePlayer(SDL_Renderer* des);
 	SDL_Rect GetRectFrame();
 
@@ -50,22 +52,24 @@ public:
 private:
 
 	std::vector<BulletObject*> p_bullet_list_;
-	float x_val_;
+	float x_val_;      
 	float y_val_;
 
-	float x_pos_;
+	float x_pos_;   //vi tri hien tai cua nhan vat
 	float y_pos_;
 
-	int width_frame_;
+	int width_frame_;  //luu kich thuoc
 	int height_frame_;
 
-	SDL_Rect frame_clip_[8];
+	SDL_Rect frame_clip_[8];  //luu cac frame
 
-	Input intput_type_;
+	Input intput_type_;  //Luu trang thai cua nhan vat
 	int frame_;
 	int status_;
 	bool on_ground_;
 
+
+	//luu vi tri cua ban do
 	int map_x_;
 	int map_y_;
 
