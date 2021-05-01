@@ -41,6 +41,7 @@ void GameMap::LoadMap(char* name)
 
 	game_map_.file_name_=name;
 	fclose(fp);
+	
 
 }
 

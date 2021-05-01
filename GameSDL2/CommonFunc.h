@@ -18,6 +18,8 @@ static SDL_Renderer* g_img_menu=NULL;
 
 //Screen-Danh cho man hinh
 const int FRAME_PER_SECOND = 30; // fps so frame trong 1s 
+
+
 const int SCREEN_WIDTH = 1400;  //chieu rong cua man hinh
 const int SCREEN_HEIGHT = 640;  //chieu cao
 const int SCREEN_BPP = 32;		

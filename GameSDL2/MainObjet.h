@@ -11,7 +11,7 @@
 #define GRAVITY_SPEED 0.8
 #define MAX_FALL_SPEED 10
 #define  PLAYER_SPEED 8
-#define PLAYER_JUMP_VAL 20
+#define PLAYER_JUMP_VAL 20   //Van toc len,xuong 
 
 class MainObject: public BaseObject
 {
@@ -40,18 +40,19 @@ public:
 	void UpdateImagePlayer(SDL_Renderer* des);
 	SDL_Rect GetRectFrame();
 
+
 	void set_bullet_list(std::vector<BulletObject*> bullet_list)
 	{
 		p_bullet_list_ = bullet_list;
 	}
 	std::vector<BulletObject*> get_bullet_list() const { return p_bullet_list_;}
-	void HandleBullet(SDL_Renderer* des);
+	void HandleBullet(SDL_Renderer* des);  //Xu ly dan ban
 	void RemoveBullet(const int& idx);
 	void set_comback_time(const int& cb_time){come_back_time_ = cb_time;}
 
 private:
 
-	std::vector<BulletObject*> p_bullet_list_;
+	std::vector<BulletObject*> p_bullet_list_; //Bang dan
 	float x_val_;      
 	float y_val_;
 
@@ -73,7 +74,7 @@ private:
 	int map_x_;
 	int map_y_;
 
-	int come_back_time_;
+	int come_back_time_; //Thoi gian cho doi de xuat hien tro lai
 };
 
 

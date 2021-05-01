@@ -118,7 +118,7 @@ void MainObject::Show(SDL_Renderer* des)
 	}
 	if(come_back_time_ ==0) 
 	{
-		//Vi tri hien tai Nv
+		//Vi tri chinh xac Nv
 		rect_.x = x_pos_ - map_x_; 
 		rect_.y = y_pos_ - map_y_;
 
@@ -174,22 +174,24 @@ void MainObject::HandelInputAction(SDL_Event events,SDL_Renderer* screen)
 	
 		}
 	}
-	
-	if(events.type == SDL_MOUSEBUTTONDOWN)
+	//Xy ly nhay cho NV
+	if(events.type == SDL_MOUSEBUTTONDOWN) 
 	{
-		if(events.button.button== SDL_BUTTON_RIGHT)
+		if(events.button.button== SDL_BUTTON_RIGHT) //chuot phai
 		{
 			intput_type_.jump_ = 1;
 		}
-		else if(events.button.button ==SDL_BUTTON_LEFT)
+		else if(events.button.button ==SDL_BUTTON_LEFT) //chuot trai
 		{
 			BulletObject* p_bullet = new BulletObject();
-			p_bullet->LoadImg("img//player_bullet.png",screen);
+			//load anh cho vien dan
+			p_bullet->LoadImg("img//player_bullet.png",screen);  
 
 			if(status_ == WALK_LEFT)
 			{
 				p_bullet-> set_bullet_dir(BulletObject::DIR_LEFT);
-				p_bullet->SetRect(this->rect_.x,rect_.y + height_frame_*0.3);
+				//Vi tri vien dan xuat phat
+				p_bullet->SetRect(this->rect_.x,rect_.y + height_frame_*0.3); 
 			}
 			else
 			{
@@ -198,10 +200,11 @@ void MainObject::HandelInputAction(SDL_Event events,SDL_Renderer* screen)
 			}
 
 
-			
+			//Toc do vien dan
 			p_bullet->set_x_val(20);
+			//Trang thai vien dan(kick chuot la ban)
 			p_bullet->set_is_move(true);
-
+			//Nap bang dan
 			p_bullet_list_.push_back(p_bullet);
 		}
 	}
@@ -211,6 +214,7 @@ void MainObject::HandelInputAction(SDL_Event events,SDL_Renderer* screen)
 
 void MainObject::HandleBullet(SDL_Renderer* des)
 {
+	//Kiem tra bang dan co hay khong
 	 for(int i = 0;i < p_bullet_list_.size();i++)
 	 {
 		 BulletObject* p_bullet = p_bullet_list_.at(i);
@@ -223,7 +227,7 @@ void MainObject::HandleBullet(SDL_Renderer* des)
 			 }
 			 else
 			 {
-				 p_bullet_list_.erase(p_bullet_list_.begin() +i);
+				 p_bullet_list_.erase(p_bullet_list_.begin() +i); //huy di
 				if(p_bullet != NULL)
 				{
 				 delete p_bullet;
@@ -273,10 +277,11 @@ void MainObject::DoPlayer(Map& map_data)
 	{
 		x_val_+= PLAYER_SPEED;
 	}
-
+	//Xu ly nhay cho NV
 	if(intput_type_.jump_ == 1)
 	{
-		if(on_ground_ == true)
+		//Khi nao NV tren mat dat thi y_val_ = - PLAYER_JUMP_VAL
+		if(on_ground_ == true) 
 		{
 		y_val_ = - PLAYER_JUMP_VAL;
 		}
@@ -289,14 +294,16 @@ void MainObject::DoPlayer(Map& map_data)
 	CenterEntityOnMap(map_data);
 	}
 
-	if(come_back_time_ >0)
+	// Xu ly roi xuong vuc tham
+	if(come_back_time_ >0) //Khi ngoai cung ban do
 	{
 		come_back_time_ --;
 		if(come_back_time_ ==0)
 		{
 			on_ground_ = false;
-			if(x_pos_ > 256)
+			if(x_pos_ > 256) //Vi tri NV>256
 			{
+				//Lui NV lai 4 tile map
 				x_pos_ -= 256;
 			}
 			else
@@ -438,7 +445,7 @@ void MainObject::CheckToMap(Map& map_data)
 	}
 }
 
-void MainObject::UpdateImagePlayer(SDL_Renderer* des)
+void MainObject::UpdateImagePlayer(SDL_Renderer* des) //Load anh trang thai NV left,right,jump
 {
 	if(on_ground_ == true)
 	{

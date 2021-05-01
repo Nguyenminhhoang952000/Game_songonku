@@ -20,7 +20,7 @@ public:
 	};
 
 
-	void set_x_val(const int& xVal) {x_val_ = xVal;}
+	void set_x_val(const int& xVal) {x_val_ = xVal;} 
 	void set_y_val(const int& yVal) {y_val_ = yVal;}
 	int get_x_val() const {return x_val_;}
 	int get_y_val() const {return y_val_;}
@@ -34,10 +34,13 @@ public:
 
 	void HandleMove(const int& x_border, const int& y_border);
 private:
-	int x_val_;
+	//Cac doi tuong di chuyen thay doi ?
+	int x_val_;  
 	int y_val_;
-	bool is_move_;
-	unsigned bullet_dir_;
+
+	bool is_move_;  //Ktra dan co trong background k?
+	//Huong cua bullet
+	unsigned bullet_dir_; 
 	
 
 

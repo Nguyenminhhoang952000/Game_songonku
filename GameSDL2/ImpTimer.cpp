@@ -21,7 +21,7 @@ void ImpTimer::start()
 {
 	is_started_ = true;
 	is_paused_ = false;
-	start_tick_ = SDL_GetTicks();
+	start_tick_ = SDL_GetTicks();  //Lien tuc lay thoi gian da troi qua
 
 }
 
@@ -38,7 +38,7 @@ void ImpTimer::paused()
 	if(is_started_ == true && is_paused_ == false)
 	{
 		is_paused_ = true;
-		paused_tick_= SDL_GetTicks()- paused_tick_;
+		paused_tick_= SDL_GetTicks()- paused_tick_; //Thoi gian hien tai - thoi gian troi qua
 		paused_tick_=0;
 
 	}

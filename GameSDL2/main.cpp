@@ -104,6 +104,7 @@ std::vector<ThreatsObject*> MakeThreadList()
 
 int main(int argc, char* argv[])
 {
+
 	ImpTimer fps_timer; 
 
 	if(InitData() == false)
@@ -140,7 +141,7 @@ int main(int argc, char* argv[])
 	bool is_quit = false;
 	while(!is_quit)
 	{
-		fps_timer.start();
+		fps_timer.start(); //Tinh thoi diem bat dau
 
 		while(SDL_PollEvent(&g_event)!=0)
 		{
@@ -163,6 +164,8 @@ int main(int argc, char* argv[])
 
 
 		p_player.HandleBullet(g_screen);
+
+
 		p_player.SetMapXY(map_data.start_x_,map_data.start_y_); 
 		p_player.DoPlayer(map_data);
 		p_player.Show(g_screen);
@@ -266,7 +269,7 @@ int main(int argc, char* argv[])
 		//Hien thi thoi gian tro choi
 		std::string str_time = "Time : ";
 		Uint32 time_val = SDL_GetTicks()/1000;
-		Uint32 val_time = 200 - time_val;
+		Uint32 val_time = 300 - time_val;
 		if(val_time <=0)
 		{
 			if(MessageBox(NULL,L"GAME OVER",L"Info", MB_OK | MB_ICONSTOP) == IDOK)
@@ -296,15 +299,14 @@ int main(int argc, char* argv[])
 
 		SDL_RenderPresent(g_screen);  //update lai man hinh 
 		
-		int real_imp_time = fps_timer.get_ticks();
+		int real_imp_time = fps_timer.get_ticks();   //Thoi gian thuc su da troi qua
 		int time_one_frame = 1000/FRAME_PER_SECOND;  //ms
-
 		if(real_imp_time<time_one_frame)
 		{
 			
-			int delay_time = time_one_frame- real_imp_time;
+			int delay_time = time_one_frame- real_imp_time;  //Tinh do tre
 			if(delay_time>=0)
-			SDL_Delay(delay_time);
+			SDL_Delay(delay_time); //Tao do tre
 
 		}
 	}

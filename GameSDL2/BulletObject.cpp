@@ -17,16 +17,17 @@ BulletObject::~BulletObject()
 
 void BulletObject::HandleMove(const int& x_border, const int& y_border)
 {
-	if(bullet_dir_== DIR_RIGHT)
+	if(bullet_dir_== DIR_RIGHT) //Huong sang phai
 	{
 		rect_.x += x_val_;
-		if(rect_.x > x_border)
+		if(rect_.x > x_border) //Neu vuot qua man hinh
 		{
 		is_move_ = false;
 		}
 	}
-	else if (bullet_dir_ == DIR_LEFT)
+	else if (bullet_dir_ == DIR_LEFT) //Huong sang trai
 	{
+
 		rect_.x -= x_val_;
 		if(rect_.x < 0)
 		{

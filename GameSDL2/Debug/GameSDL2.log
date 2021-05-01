@@ -1,38 +1,60 @@
-﻿  MainObjet.cpp
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(46,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(59,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
+﻿  BulletObject.cpp
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(48,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(61,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
+  MainObjet.cpp
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(48,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(61,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
 C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(122,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(123,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(192,45): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(197,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(214,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(260,15): warning C4305: '+=': truncation from 'double' to 'float'
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(318,29): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(332,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(358,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(359,43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(361,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(362,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(371,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(380,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(390,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(391,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(393,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(394,42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(402,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(417,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(432,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(194,45): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(199,64): warning C4244: 'argument': conversion from 'double' to 'const int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(218,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(264,15): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(325,29): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(339,28): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(365,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(366,43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(368,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(369,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(378,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(387,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(397,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(398,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(400,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(401,42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(409,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(424,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\MainObjet.cpp(439,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+  ThreatsObiect.cpp
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(48,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(61,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(96,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(97,20): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(115,33): warning C4305: '+=': truncation from 'double' to 'float'
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(173,24): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(174,43): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(176,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(177,30): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(185,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(194,20): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(203,13): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(204,25): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(206,22): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(207,42): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(215,16): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(227,21): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\ThreatsObiect.cpp(241,43): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
   game_map.cpp
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(46,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(59,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(48,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(61,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
   main.cpp
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(46,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(59,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(48,2): warning C4091: 'typedef ': ignored on left of 'Input' when no variable is declared
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\CommonFunc.h(61,2): warning C4091: 'typedef ': ignored on left of 'Map' when no variable is declared
 C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(95,28): warning C4244: 'argument': conversion from 'int' to 'const float', possible loss of data
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(174,16): warning C4018: '<': signed/unsigned mismatch
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(187,22): warning C4018: '<': signed/unsigned mismatch
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(232,19): warning C4018: '<': signed/unsigned mismatch
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(237,18): warning C4018: '<': signed/unsigned mismatch
-C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(294,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(177,16): warning C4018: '<': signed/unsigned mismatch
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(190,22): warning C4018: '<': signed/unsigned mismatch
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(235,19): warning C4018: '<': signed/unsigned mismatch
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(240,18): warning C4018: '<': signed/unsigned mismatch
+C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\GameSDL2\main.cpp(297,49): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
   Generating Code...
   GameSDL2.vcxproj -> C:\Users\BVCN 88\OneDrive\Documents\Visual Studio 2012\Projects\GameSDL2\Game_songonku\Debug\GameSDL2.exe
