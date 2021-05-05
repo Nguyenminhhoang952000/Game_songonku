@@ -10,5 +10,5 @@
     + Để giúp game hấp dẫn cũng như kịch tính hơn em có tạo lớp ThreatsObiect ( lớp boss)
     + Lối chơi đơn giản
 - Game songonku này để em tự đánh giá cũng như tự chấm thì con số : 7 điểm là cũng khá hợp lý so với bài làm.
-Link Demo của em: https://www.youtube.com/watch?v=TuheQ3elivg
+- Link Demo của em: https://www.youtube.com/watch?v=TuheQ3elivg
 
