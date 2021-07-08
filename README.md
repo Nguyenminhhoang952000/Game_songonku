@@ -9,6 +9,5 @@
     + Songonku còn có khả năng bắn ra các viện đạn bằng cách sử dụng chuột trái 
     + Để giúp game hấp dẫn cũng như kịch tính hơn em có tạo lớp ThreatsObiect ( lớp boss)
     + Lối chơi đơn giản
-- Game songonku này để em tự đánh giá cũng như tự chấm thì con số : 8 điểm là cũng khá hợp lý so với bài làm.
 - Link Demo của em: https://www.youtube.com/watch?v=TuheQ3elivg
 
